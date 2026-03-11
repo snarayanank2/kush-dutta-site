@@ -1,5 +1,5 @@
 export const siteData = {
-  name: 'Kush Datta',
+  name: 'Kush Dutta',
   tagline: 'Your Personal Trainer & Fitness Coach',
   heroSubtext: 'No matter where you are in your fitness journey — just starting out or looking to break through a plateau — I\'ll help you get stronger, feel confident, and actually enjoy the process.',
   ctaText: 'Book a Free Consultation',
@@ -152,11 +152,11 @@ export const siteData = {
     formspreeId: 'YOUR_FORMSPREE_ID',
     whatsapp: '+91XXXXXXXXXX',
     email: 'kush@example.com',
-    instagram: 'https://instagram.com/kushdatta',
+    instagram: 'https://instagram.com/kushdutta',
   },
 
   footer: {
-    copyright: `© ${new Date().getFullYear()} Kush Datta. All rights reserved.`,
+    copyright: `© ${new Date().getFullYear()} Kush Dutta. All rights reserved.`,
     tagline: 'Helping everyday people build strength, confidence, and lasting habits.',
   },
 }
