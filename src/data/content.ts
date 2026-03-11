@@ -180,10 +180,8 @@ export const siteData = {
   contact: {
     title: 'Let\'s Talk About Your Goals',
     subtitle: 'Book a free 15-minute chat — no pressure, no commitment. Just a conversation about where you are and where you want to be. I\'m based right here in Adarsh Palm Retreat.',
-    formspreeId: 'YOUR_FORMSPREE_ID',
-    whatsapp: '+91XXXXXXXXXX',
-    email: 'kush@example.com',
-    instagram: 'https://instagram.com/kushdutta',
+    whatsapp: '+919663772333',
+    instagram: 'https://instagram.com/kushdutta1.0',
   },
 
   footer: {

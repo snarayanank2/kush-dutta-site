@@ -1,4 +1,4 @@
-import { FaWhatsapp, FaInstagram, FaEnvelope } from 'react-icons/fa'
+import { FaWhatsapp, FaInstagram } from 'react-icons/fa'
 import { siteData } from '../data/content'
 import './Footer.css'
 
@@ -22,9 +22,6 @@ export default function Footer() {
             </a>
             <a href={siteData.contact.instagram} target="_blank" rel="noopener noreferrer" aria-label="Instagram">
               <FaInstagram />
-            </a>
-            <a href={`mailto:${siteData.contact.email}`} aria-label="Email">
-              <FaEnvelope />
             </a>
           </div>
         </div>
