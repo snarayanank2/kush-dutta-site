@@ -1,0 +1,125 @@
+.pricing {
+  background: var(--color-white);
+}
+
+.pricing-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  align-items: stretch;
+}
+
+.pricing-card {
+  background: var(--color-white);
+  border: 2px solid var(--color-gray-200);
+  border-radius: var(--border-radius);
+  padding: 40px 32px;
+  display: flex;
+  flex-direction: column;
+  transition: transform var(--transition), box-shadow var(--transition);
+}
+
+.pricing-card:hover {
+  transform: translateY(-4px);
+}
+
+.pricing-card.highlighted {
+  background: var(--color-black);
+  color: var(--color-white);
+  border-color: var(--color-black);
+  transform: scale(1.05);
+  box-shadow: 0 24px 48px rgba(0, 0, 0, 0.15);
+}
+
+.pricing-card.highlighted:hover {
+  transform: scale(1.05) translateY(-4px);
+}
+
+.pricing-card-name {
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.pricing-card.highlighted .pricing-card-name {
+  color: var(--color-accent);
+}
+
+.pricing-card-price {
+  font-family: var(--font-heading);
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+
+.pricing-card-price span {
+  font-size: 1rem;
+  font-weight: 400;
+  font-family: var(--font-body);
+}
+
+.pricing-card-desc {
+  color: var(--color-gray-500);
+  font-size: 0.875rem;
+  margin-bottom: 32px;
+}
+
+.pricing-card.highlighted .pricing-card-desc {
+  color: var(--color-gray-400);
+}
+
+.pricing-features {
+  flex: 1;
+  margin-bottom: 32px;
+}
+
+.pricing-features li {
+  padding: 8px 0;
+  font-size: 0.9375rem;
+  border-bottom: 1px solid var(--color-gray-100);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.pricing-card.highlighted .pricing-features li {
+  border-color: var(--color-gray-800);
+}
+
+.pricing-features li::before {
+  content: '✓';
+  font-weight: 700;
+  color: var(--color-accent);
+}
+
+.pricing-card .btn {
+  width: 100%;
+}
+
+.pricing-card.highlighted .btn-outline {
+  border-color: var(--color-white);
+  color: var(--color-white);
+}
+
+.pricing-card.highlighted .btn-outline:hover {
+  background: var(--color-white);
+  color: var(--color-black);
+}
+
+@media (max-width: 1024px) {
+  .pricing-grid {
+    grid-template-columns: 1fr;
+    max-width: 420px;
+    margin: 0 auto;
+  }
+
+  .pricing-card.highlighted {
+    transform: none;
+  }
+
+  .pricing-card.highlighted:hover {
+    transform: translateY(-4px);
+  }
+}
