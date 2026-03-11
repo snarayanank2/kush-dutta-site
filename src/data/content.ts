@@ -182,6 +182,7 @@ export const siteData = {
     subtitle: 'Book a free 15-minute chat — no pressure, no commitment. Just a conversation about where you are and where you want to be. I\'m based right here in Adarsh Palm Retreat.',
     whatsapp: '+919663772333',
     instagram: 'https://instagram.com/kushdutta1.0',
+    youtube: 'https://www.youtube.com/@kushdutta',
   },
 
   footer: {

@@ -1,4 +1,4 @@
-import { FaWhatsapp, FaInstagram } from 'react-icons/fa'
+import { FaWhatsapp, FaInstagram, FaYoutube } from 'react-icons/fa'
 import { siteData } from '../data/content'
 import { useScrollReveal } from '../hooks/useScrollReveal'
 import './Contact.css'
@@ -38,6 +38,18 @@ export default function Contact() {
               <div>
                 <span className="contact-link-label">Instagram</span>
                 <span className="contact-link-detail">@kushdutta1.0</span>
+              </div>
+            </a>
+            <a
+              href={contact.youtube}
+              className="contact-link"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <span className="contact-link-icon"><FaYoutube /></span>
+              <div>
+                <span className="contact-link-label">YouTube</span>
+                <span className="contact-link-detail">@kushdutta</span>
               </div>
             </a>
           </div>
