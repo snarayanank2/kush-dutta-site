@@ -1,9 +1,9 @@
-import { FaDumbbell, FaLaptop, FaAppleAlt, FaTrophy } from 'react-icons/fa'
+import { FaDumbbell, FaWalking, FaAppleAlt, FaHeartbeat } from 'react-icons/fa'
 import { siteData } from '../data/content'
 import { useScrollReveal } from '../hooks/useScrollReveal'
 import './Programs.css'
 
-const iconMap: Record<string, React.ComponentType> = { FaDumbbell, FaLaptop, FaAppleAlt, FaTrophy }
+const iconMap: Record<string, React.ComponentType> = { FaDumbbell, FaWalking, FaAppleAlt, FaHeartbeat }
 
 export default function Programs() {
   const ref = useScrollReveal()

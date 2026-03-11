@@ -14,7 +14,7 @@
   --color-gray-200: #e5e5e5;
   --color-gray-300: #d4d4d4;
   --color-gray-400: #a3a3a3;
-  --color-gray-500: #737373;
+  --color-gray-500: #525252;
   --color-gray-600: #525252;
   --color-gray-700: #404040;
   --color-gray-800: #262626;
@@ -40,9 +40,10 @@ html {
 
 body {
   font-family: var(--font-body);
+  font-size: 17px;
   color: var(--color-black);
   background: var(--color-white);
-  line-height: 1.6;
+  line-height: 1.75;
 }
 
 img {
@@ -179,5 +180,18 @@ section {
   :root {
     --section-padding: 64px 16px;
     --nav-height: 64px;
+  }
+}
+
+/* ===== Accessibility ===== */
+@media (prefers-reduced-motion: reduce) {
+  .reveal {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+
+  html {
+    scroll-behavior: auto;
   }
 }

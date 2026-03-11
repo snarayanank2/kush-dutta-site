@@ -3,8 +3,9 @@ import Hero from './components/Hero'
 import About from './components/About'
 import Achievements from './components/Achievements'
 import Programs from './components/Programs'
-import Pricing from './components/Pricing'
+import FAQ from './components/FAQ'
 import Testimonials from './components/Testimonials'
+import Pricing from './components/Pricing'
 import Contact from './components/Contact'
 import Footer from './components/Footer'
 
@@ -16,8 +17,9 @@ export default function App() {
         <Hero />
         <About />
         <Achievements />
-        <Testimonials />
         <Programs />
+        <FAQ />
+        <Testimonials />
         <Pricing />
         <Contact />
       </main>
