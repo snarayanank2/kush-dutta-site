@@ -1,3 +1,35 @@
+export interface ImageData {
+  src: string
+  srcSet: string
+  alt: string
+  width: number
+  height: number
+  placeholder?: string
+}
+
+const IMG_BASE = '/kush-dutta-site/optimized'
+
+export function img(
+  dir: string,
+  name: string,
+  alt: string,
+  sizes: number[] = [400, 800, 1200],
+  aspectRatio: [number, number] = [3, 4],
+): ImageData {
+  const srcSet = sizes
+    .map((w) => `${IMG_BASE}/${dir}/${name}-${w}w.webp ${w}w`)
+    .join(', ')
+  const largest = sizes[sizes.length - 1] as number
+  return {
+    src: `${IMG_BASE}/${dir}/${name}-${largest}w.webp`,
+    srcSet,
+    alt,
+    width: largest,
+    height: Math.round(largest * (aspectRatio[1] / aspectRatio[0])),
+    placeholder: `${IMG_BASE}/${dir}/${name}-placeholder.webp`,
+  }
+}
+
 export const siteData = {
   name: 'Kush Dutta',
   tagline: 'Fitness Coaching for APR Residents — Right Here at the Clubhouse Gym',
@@ -15,6 +47,7 @@ export const siteData = {
 
   about: {
     title: 'Why Train With Me?',
+    image: img('about', 'kush_1', 'Kush Dutta'),
     text: [
       'After 40, your body doesn\'t come with a manual. You might be dealing with a stiff back, creaky knees, low energy, or a doctor telling you to "start exercising." But where do you even begin — and how do you do it without getting hurt?',
       'That\'s where I come in. I\'ve spent 8+ years helping people build sustainable fitness habits — with a focus on safe, progressive training that respects your body\'s needs. No extreme workouts, no crash diets, no one-size-fits-all plans.',
@@ -38,6 +71,17 @@ export const siteData = {
       { title: 'Reduced Joint Pain', placement: '85%', category: 'Of clients report less back & knee pain' },
       { title: 'Improved Blood Work', placement: '70%', category: 'Of clients saw better BP, sugar, or cholesterol numbers' },
       { title: 'Client Satisfaction', placement: '4.9 / 5', category: 'Based on client feedback' },
+    ],
+  },
+
+  gallery: {
+    title: 'Training in Action',
+    subtitle: 'Real sessions at the Adarsh Palm Retreat Clubhouse Gym',
+    items: [
+      img('gallery', 'client_1', 'Client training session'),
+      img('gallery', 'client_2', 'Client training session'),
+      img('gallery', 'client_3', 'Client training session'),
+      img('gallery', 'client_4', 'Client training session'),
     ],
   },
 
@@ -127,21 +171,25 @@ export const siteData = {
         name: 'Suresh Krishnan',
         text: 'At 52, I hadn\'t exercised in over 20 years. My doctor told me to start or go on BP medication. Kush started me slow, taught me everything patiently, and within 4 months my blood pressure was back to normal. I feel 10 years younger.',
         role: 'Age 52 — Normalized BP without medication',
+        avatar: undefined as ImageData | undefined,
       },
       {
         name: 'Anita Raghavan',
         text: 'I was terrified of the gym — I thought it was only for young people. Kush made me feel completely comfortable from day one. My knee pain is almost gone, and I\'ve lost 7 kg. My husband has now joined too!',
         role: 'Age 47 — Reduced knee pain, lost 7 kg',
+        avatar: undefined as ImageData | undefined,
       },
       {
         name: 'Rajesh & Meera Iyer',
         text: 'We started training together as a couple, and it\'s been the best decision we\'ve made. The convenience of training at the clubhouse gym means we never miss a session. Our energy levels are completely different now.',
         role: 'Couple, ages 54 & 50 — Training together at APR',
+        avatar: undefined as ImageData | undefined,
       },
       {
         name: 'Deepa Murthy',
         text: 'After years of back pain from sitting at a desk, I was skeptical that exercise would help. Kush designed a program specifically for my back, and the improvement has been remarkable. I wish I\'d started sooner.',
         role: 'Age 45 — IT professional, resolved chronic back pain',
+        avatar: undefined as ImageData | undefined,
       },
     ],
   },

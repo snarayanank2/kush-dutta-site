@@ -12,6 +12,7 @@
 .about-image {
   aspect-ratio: 3 / 4;
   border-radius: var(--border-radius);
+  object-fit: cover;
 }
 
 .about-text h2 {

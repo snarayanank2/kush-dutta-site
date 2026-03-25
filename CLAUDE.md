@@ -13,6 +13,7 @@ Personal website for Kush Datta — personal trainer and fitness coach. Single-p
 - `npm run typecheck` — TypeScript type checking only
 - `npm run lint` — ESLint (TypeScript + React rules)
 - `npm run preview` — Preview production build locally
+- `npm run optimize` — Convert images in `images-src/` to optimized WebP in `public/optimized/` (also runs automatically before build)
 
 ## Tech Stack
 
@@ -26,6 +27,15 @@ Personal website for Kush Datta — personal trainer and fitness coach. Single-p
 ## Architecture
 
 ```
+images-src/               # Original source images (tracked in git)
+  about/                  # About section photos
+  testimonials/           # Client avatars
+  gallery/                # Gallery images
+  hero/                   # Hero section images
+scripts/
+  optimize-images.mjs     # sharp-based image optimizer (WebP + responsive sizes)
+public/
+  optimized/              # Generated WebP variants (tracked in git)
 src/
   main.tsx              # Entry point
   App.tsx               # Composes Navbar + all sections
@@ -39,6 +49,7 @@ src/
     Hero.tsx + .css     # Full viewport hero, black bg
     About.tsx + .css    # Two-column bio + credentials
     Achievements.tsx + .css  # Results stat cards
+    OptimizedImage.tsx + .css  # Reusable responsive image with srcset/lazy loading
     Gallery.tsx + .css  # Placeholder image grid
     Programs.tsx + .css # Service cards with react-icons
     Pricing.tsx + .css  # 3-tier pricing cards
@@ -50,6 +61,7 @@ src/
 ## Conventions
 
 - All text/data lives in `src/data/content.ts` — edit there to swap placeholders for real content
+- **Image pipeline**: Drop originals into `images-src/{section}/`, run `npm run optimize`, then reference via `ImageData` in `content.ts`. Components fall back to placeholder `<div>`s when no image is set.
 - Placeholder images use CSS `<div>` blocks with `placeholder-img` class — swap for `<img>` tags when real photos are available
 - CSS custom properties defined in `App.css :root` for consistent theming
 - Responsive breakpoints: 768px (mobile), 1024px (tablet)
