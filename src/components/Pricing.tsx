@@ -23,15 +23,18 @@ export default function Pricing() {
                 ₹{tier.price}<span>{tier.period}</span>
               </p>
               <p className="pricing-card-desc">{tier.description}</p>
-              <ul className="pricing-features">
-                {tier.features.map((f) => (
-                  <li key={f}>{f}</li>
-                ))}
-              </ul>
+              {tier.features.length > 0 && (
+                <ul className="pricing-features">
+                  {tier.features.map((f) => (
+                    <li key={f}>{f}</li>
+                  ))}
+                </ul>
+              )}
               <a href="#contact" className="btn btn-outline">Get Started</a>
             </div>
           ))}
         </div>
+        <p className="pricing-disclaimer">{siteData.pricing.disclaimer}</p>
       </div>
     </section>
   )

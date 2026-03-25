@@ -4,9 +4,11 @@
 
 .pricing-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   gap: 24px;
   align-items: stretch;
+  max-width: 700px;
+  margin: 0 auto;
 }
 
 .pricing-card {
@@ -96,6 +98,7 @@
 
 .pricing-card .btn {
   width: 100%;
+  margin-top: auto;
 }
 
 .pricing-card.highlighted .btn-outline {
@@ -108,18 +111,16 @@
   color: var(--color-black);
 }
 
-@media (max-width: 1024px) {
+.pricing-disclaimer {
+  text-align: center;
+  font-size: 0.8125rem;
+  color: var(--color-gray-500);
+  margin-top: 24px;
+}
+
+@media (max-width: 768px) {
   .pricing-grid {
     grid-template-columns: 1fr;
     max-width: 420px;
-    margin: 0 auto;
-  }
-
-  .pricing-card.highlighted {
-    transform: none;
-  }
-
-  .pricing-card.highlighted:hover {
-    transform: translateY(-4px);
   }
 }
