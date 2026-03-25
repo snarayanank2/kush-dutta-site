@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://snarayanank2.github.io/kush-dutta-site/sitemap.xml

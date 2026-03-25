@@ -32,8 +32,8 @@ export function img(
 
 export const siteData = {
   name: 'Kush Dutta',
-  tagline: 'Fitness Coaching for APR Residents — Right Here at the Clubhouse Gym',
-  heroSubtext: 'Starting to exercise after 40 can feel daunting — but it doesn\'t have to be. I work with residents of Adarsh Palm Retreat to build strength, improve mobility, and feel energetic again. No prior gym experience needed.',
+  tagline: 'Fitness Coaching for APR Residents',
+  heroSubtext: 'Build strength, improve mobility, and feel energetic again — right here at the Clubhouse Gym. No prior gym experience needed.',
   ctaText: 'Book a Free 15-Min Chat',
 
   nav: [
@@ -79,22 +79,22 @@ export const siteData = {
     subtitle: 'Real people, real results',
     items: [
       {
-        image: img('gallery', 'client_1', 'Client training session'),
+        image: img('gallery', 'client_1', 'Suresh K. strength training at Adarsh Palm Retreat Clubhouse Gym'),
         quote: 'I never thought I\'d enjoy going to the gym at 50. Now I look forward to every session.',
         name: 'Suresh K.',
       },
       {
-        image: img('gallery', 'client_2', 'Client training session'),
+        image: img('gallery', 'client_2', 'Anita R. after losing 7 kg with personal training at APR gym'),
         quote: 'My knee pain is almost gone and I\'ve lost 7 kg. My husband has now joined too!',
         name: 'Anita R.',
       },
       {
-        image: img('gallery', 'client_3', 'Client training session'),
+        image: img('gallery', 'client_3', 'Rajesh and Meera training together as a couple at APR Clubhouse Gym'),
         quote: 'Training together as a couple has been the best decision we\'ve made. Our energy levels are completely different now.',
         name: 'Rajesh & Meera I.',
       },
       {
-        image: img('gallery', 'client_4', 'Client training session'),
+        image: img('gallery', 'client_4', 'Deepa M. doing back-strengthening exercises with trainer Kush Dutta'),
         quote: 'After years of back pain from sitting at a desk, the improvement has been remarkable. I wish I\'d started sooner.',
         name: 'Deepa M.',
       },
