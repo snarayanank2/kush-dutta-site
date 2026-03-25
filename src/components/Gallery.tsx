@@ -35,7 +35,7 @@ export default function Gallery() {
             <div className="carousel-image">
               <OptimizedImage
                 image={current.image}
-                sizes="(max-width: 768px) calc(100vw - 32px), 500px"
+                sizes="(max-width: 500px) calc(100vw - 32px), 500px"
               />
             </div>
             <div className="carousel-quote">
