@@ -75,13 +75,29 @@ export const siteData = {
   },
 
   gallery: {
-    title: 'Training in Action',
-    subtitle: 'Real sessions at the Adarsh Palm Retreat Clubhouse Gym',
+    title: 'Client Stories',
+    subtitle: 'Real people, real results — right here at the APR Clubhouse Gym',
     items: [
-      img('gallery', 'client_1', 'Client training session'),
-      img('gallery', 'client_2', 'Client training session'),
-      img('gallery', 'client_3', 'Client training session'),
-      img('gallery', 'client_4', 'Client training session'),
+      {
+        image: img('gallery', 'client_1', 'Client training session'),
+        quote: 'I never thought I\'d enjoy going to the gym at 50. Now I look forward to every session.',
+        name: 'Suresh K.',
+      },
+      {
+        image: img('gallery', 'client_2', 'Client training session'),
+        quote: 'My knee pain is almost gone and I\'ve lost 7 kg. My husband has now joined too!',
+        name: 'Anita R.',
+      },
+      {
+        image: img('gallery', 'client_3', 'Client training session'),
+        quote: 'Training together as a couple has been the best decision we\'ve made. Our energy levels are completely different now.',
+        name: 'Rajesh & Meera I.',
+      },
+      {
+        image: img('gallery', 'client_4', 'Client training session'),
+        quote: 'After years of back pain from sitting at a desk, the improvement has been remarkable. I wish I\'d started sooner.',
+        name: 'Deepa M.',
+      },
     ],
   },
 
