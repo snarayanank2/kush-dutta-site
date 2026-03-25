@@ -173,6 +173,10 @@ export const siteData = {
         answer: 'All sessions happen at the Adarsh Palm Retreat Clubhouse Gym — it\'s right here in your community, so there\'s no travel involved. It\'s well-equipped and I\'ll guide you through every piece of equipment.',
       },
       {
+        question: 'Are sessions at the Villa Clubhouse or the Towers Clubhouse?',
+        answer: 'Sessions happen at both locations. We can pick whichever is more convenient for you.',
+      },
+      {
         question: 'How is this different from just joining a gym on my own?',
         answer: 'Most people who join a gym on their own either get injured, don\'t see results, or quit within a few weeks. With personal training, you get a program built for your body, expert guidance on every exercise, and someone to keep you accountable. The results are dramatically different.',
       },
