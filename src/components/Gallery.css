@@ -2,6 +2,10 @@
   background: var(--color-gray-100);
 }
 
+.gallery .section-header {
+  margin-bottom: 32px;
+}
+
 .carousel-slide {
   display: grid;
   grid-template-columns: 1fr 2fr;
@@ -33,12 +37,7 @@
 }
 
 .carousel-quote blockquote p::before {
-  content: '\201C';
-  display: block;
-  font-size: 3rem;
-  color: var(--color-accent);
-  line-height: 1;
-  margin-bottom: 8px;
+  content: none;
 }
 
 .carousel-quote cite {
@@ -53,7 +52,7 @@
   align-items: center;
   justify-content: center;
   gap: 24px;
-  margin-top: 40px;
+  margin-top: 20px;
 }
 
 .carousel-controls > button {

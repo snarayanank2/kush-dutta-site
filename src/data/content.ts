@@ -76,7 +76,7 @@ export const siteData = {
 
   gallery: {
     title: 'Client Stories',
-    subtitle: 'Real people, real results — right here at the APR Clubhouse Gym',
+    subtitle: 'Real people, real results',
     items: [
       {
         image: img('gallery', 'client_1', 'Client training session'),
@@ -175,37 +175,6 @@ export const siteData = {
           'Unlimited plan revisions',
         ],
         highlighted: false,
-      },
-    ],
-  },
-
-  testimonials: {
-    title: 'What My Clients Say',
-    subtitle: 'Real residents, real transformations — no gym experience required to start',
-    items: [
-      {
-        name: 'Suresh Krishnan',
-        text: 'At 52, I hadn\'t exercised in over 20 years. My doctor told me to start or go on BP medication. Kush started me slow, taught me everything patiently, and within 4 months my blood pressure was back to normal. I feel 10 years younger.',
-        role: 'Age 52 — Normalized BP without medication',
-        avatar: undefined as ImageData | undefined,
-      },
-      {
-        name: 'Anita Raghavan',
-        text: 'I was terrified of the gym — I thought it was only for young people. Kush made me feel completely comfortable from day one. My knee pain is almost gone, and I\'ve lost 7 kg. My husband has now joined too!',
-        role: 'Age 47 — Reduced knee pain, lost 7 kg',
-        avatar: undefined as ImageData | undefined,
-      },
-      {
-        name: 'Rajesh & Meera Iyer',
-        text: 'We started training together as a couple, and it\'s been the best decision we\'ve made. The convenience of training at the clubhouse gym means we never miss a session. Our energy levels are completely different now.',
-        role: 'Couple, ages 54 & 50 — Training together at APR',
-        avatar: undefined as ImageData | undefined,
-      },
-      {
-        name: 'Deepa Murthy',
-        text: 'After years of back pain from sitting at a desk, I was skeptical that exercise would help. Kush designed a program specifically for my back, and the improvement has been remarkable. I wish I\'d started sooner.',
-        role: 'Age 45 — IT professional, resolved chronic back pain',
-        avatar: undefined as ImageData | undefined,
       },
     ],
   },
