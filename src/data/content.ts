@@ -90,7 +90,7 @@ export const siteData = {
       },
       {
         image: img('gallery', 'client_7', 'Aishwarya achieving fitness goals with guided training at APR Clubhouse Gym'),
-        quote: 'As a working mom, I needed something efficient and sustainable. Kush designed sessions that fit my schedule and actually get results.',
+        quote: 'I wanted a fitness routine that was efficient and sustainable. Kush designed sessions that fit my schedule perfectly and the results have been amazing.',
         name: 'Aishwarya',
       },
       {
@@ -105,7 +105,7 @@ export const siteData = {
       },
       {
         image: img('gallery', 'client_4', 'Siva training with personal trainer Kush Dutta at APR Clubhouse Gym'),
-        quote: 'My cholesterol and sugar numbers improved so much that my doctor asked what I changed. I\'ve lost 12 kg in the last 6 months while actually increasing my strength — just consistent training and better habits.',
+        quote: 'I\'ve lost 12 kg in the last 6 months while actually increasing my strength — just consistent training and better habits.',
         name: 'Siva',
       },
     ],

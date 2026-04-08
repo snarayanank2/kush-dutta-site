@@ -21,7 +21,7 @@ export default function Gallery() {
   useEffect(() => {
     const id = setInterval(next, 5000)
     return () => clearInterval(id)
-  }, [next])
+  }, [next, active])
 
   return (
     <section className="gallery" id="testimonials">
