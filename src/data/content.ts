@@ -95,6 +95,11 @@ export const siteData = {
         quote: 'I\'ve lost 12 kg in the last 6 months while actually increasing my strength — just consistent training and better habits.',
         name: 'Siva',
       },
+      {
+        image: img('gallery', 'client_8', 'Shruti training at Adarsh Palm Retreat Clubhouse Gym'),
+        quote: 'I was hesitant about weight training, but Kush explained every exercise and why it mattered. Within a couple of months, my posture improved, my energy levels went up, and I actually look forward to my sessions now.',
+        name: 'Shruti',
+      },
     ],
   },
 
