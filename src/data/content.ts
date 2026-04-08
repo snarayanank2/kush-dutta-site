@@ -61,19 +61,6 @@ export const siteData = {
     ],
   },
 
-  achievements: {
-    title: 'Real Results from Real People',
-    subtitle: 'What clients over 40 have achieved with consistent, safe training',
-    items: [
-      { title: 'Clients Over 40 Trained', placement: '80+', category: 'From complete beginners to regular exercisers' },
-      { title: 'Average Weight Loss', placement: '8–12 kg', category: 'In the first 6 months' },
-      { title: 'Clients Who Stick With It', placement: '90%', category: 'Retention rate after 3 months' },
-      { title: 'Reduced Joint Pain', placement: '85%', category: 'Of clients report less back & knee pain' },
-      { title: 'Improved Blood Work', placement: '70%', category: 'Of clients saw better BP, sugar, or cholesterol numbers' },
-      { title: 'Client Satisfaction', placement: '4.9 / 5', category: 'Based on client feedback' },
-    ],
-  },
-
   gallery: {
     title: 'Client Stories',
     subtitle: 'Real people, real results',
