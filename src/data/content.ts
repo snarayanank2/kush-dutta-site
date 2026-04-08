@@ -7,7 +7,7 @@ export interface ImageData {
   placeholder?: string
 }
 
-const IMG_BASE = '/kush-dutta-site/optimized'
+const IMG_BASE = '/optimized'
 
 export function img(
   dir: string,
