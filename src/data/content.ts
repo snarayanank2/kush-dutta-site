@@ -100,6 +100,11 @@ export const siteData = {
         quote: 'I was hesitant about weight training, but Kush explained every exercise and why it mattered. Within a couple of months, my posture improved, my energy levels went up, and I actually look forward to my sessions now.',
         name: 'Shruti',
       },
+      {
+        image: img('gallery', 'client_9', 'Amrita training at Adarsh Palm Retreat Clubhouse Gym'),
+        quote: 'I never thought I\'d enjoy working out, but Kush made it fun and manageable. He tailored everything to my level, and now I feel stronger, sleep better, and have so much more confidence.',
+        name: 'Amrita',
+      },
     ],
   },
 
