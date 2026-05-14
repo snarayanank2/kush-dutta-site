@@ -141,7 +141,7 @@ export const siteData = {
     tiers: [
       {
         name: '10-Pack of Sessions',
-        price: '13,500',
+        price: '14,000',
         period: '',
         description: 'Perfect for individuals',
         features: [],
